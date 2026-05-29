@@ -1,1 +1,33 @@
+# Phase 1: General industry feeds
+# Competitor-specific feeds added in Phase 2
 
+feeds:
+  - name: "The New Stack"
+    url: "https://thenewstack.io/feed/"
+    category: "industry"
+    focus: "cloud native, devops, platform engineering"
+
+  - name: "LeadDev"
+    url: "https://leaddev.com/feed"
+    category: "industry"
+    focus: "engineering leadership, team performance"
+
+  - name: "InfoQ Software Engineering"
+    url: "https://feed.infoq.com/software-engineering"
+    category: "industry"
+    focus: "software delivery, engineering practices"
+
+  - name: "ThoughtWorks Insights"
+    url: "https://www.thoughtworks.com/rss/insights.xml"
+    category: "industry"
+    focus: "technology strategy, engineering culture"
+
+  - name: "DX Tips"
+    url: "https://dx.tips/rss"
+    category: "industry"
+    focus: "developer experience, DevEx metrics"
+
+  - name: "Software Lead Weekly"
+    url: "https://softwareleadweekly.com/issues.rss"
+    category: "industry"
+    focus: "engineering leadership, team management"
