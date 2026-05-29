@@ -1,1 +1,49 @@
+themes:
+  - name: "AI ROI"
+    keywords:
+      - "AI ROI engineering teams"
+      - "measuring AI productivity"
+      - "AI investment returns software"
+      - "AI value measurement developers"
 
+  - name: "Token optimization"
+    keywords:
+      - "LLM token cost reduction"
+      - "reducing token usage production"
+      - "AI inference cost engineering"
+      - "token efficiency optimization"
+
+  - name: "Agentic workflows"
+    keywords:
+      - "AI agents software development 2026"
+      - "agentic coding workflows engineers"
+      - "autonomous AI developer tools"
+      - "multi-agent engineering productivity"
+
+  - name: "Engineering analytics"
+    keywords:
+      - "engineering metrics software teams"
+      - "DORA metrics 2026"
+      - "software delivery performance measurement"
+      - "developer productivity analytics"
+
+  - name: "Developer experience"
+    keywords:
+      - "developer experience improvement 2026"
+      - "DevEx engineering teams"
+      - "developer satisfaction measurement"
+      - "engineering team productivity culture"
+
+  - name: "AI adoption"
+    keywords:
+      - "enterprise AI adoption engineering"
+      - "AI tool rollout developers"
+      - "AI skills gap software teams"
+      - "AI change management engineering"
+
+  - name: "Engineering productivity"
+    keywords:
+      - "engineering productivity metrics"
+      - "software delivery intelligence"
+      - "code quality measurement teams"
+      - "sprint velocity planning engineering"
