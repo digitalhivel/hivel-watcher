@@ -180,19 +180,6 @@ with a note that Notion write failed.
 
 ---
 
-### Step 9: Notion run log
-After writing all signals, create one final page in the Hivel Signal Inbox
-database with this structure:
-
-  Headline     → "Watcher run — {timestamp}"
-  Signal Type  → "run_summary"
-  Why Relevant → "Sources: {N} web searches, {N} RSS feeds. 
-                  Found: {total}. Passed threshold: {N}. 
-                  Errors: {list or none}"
-  Status       → "summary"
-
----
-
 ## What a good run looks like
   2 to 5 signals per run is the ideal range.
   More than 8 signals means your scoring is too loose — tighten it.
