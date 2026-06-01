@@ -223,3 +223,11 @@ Any errors: {list feed URLs that failed, or "none"}
   If Notion write fails — still send Slack alert, note the failure.
   If Slack post fails — write the signal to Notion anyway.
   Never abort the full run because one source or one write failed.
+
+## Critical: environment variables
+All configuration is in environment variables. Never look for a .env file.
+The cloud environment does not have one. Access keys like this:
+
+  NOTION_SIGNALS_DB_ID  — value is 36ffc7a5505f80fda57ef9fad332778e
+                          This is the Hivel Signal Inbox database.
+                          Always use this ID when writing signal records.
