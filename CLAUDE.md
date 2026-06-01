@@ -180,33 +180,16 @@ with a note that Notion write failed.
 
 ---
 
-### Step 9: Send a Slack alert for each passing signal
-Post to the channel in the SLACK_CHANNEL environment variable.
-Use exactly this format for each signal:
+### Step 9: Notion run log
+After writing all signals, create one final page in the Hivel Signal Inbox
+database with this structure:
 
-[SIGNAL] {theme_match} | {relevance_score}/10 | {URGENCY IN CAPS}
-
-{headline}
-
-Why it matters: {why_relevant}
-Type: {signal_type} | Format: {suggested_format}
-Market language: {market_language as comma-separated list}
-Source: {source_url}
-
----
-
-### Step 10: Post the run summary to Slack
-After all signals have been processed, post one final message:
-
-Watcher run complete — {current timestamp}
-─────────────────────────────
-Sources checked:
-  Web search: {N} queries across {N} themes
-  RSS feeds: {N} feeds checked, {N} items found
-Signals collected: {total before filtering}
-Signals above threshold (7+): {N}
-Signals written to Notion: {N}
-Any errors: {list feed URLs that failed, or "none"}
+  Headline     → "Watcher run — {timestamp}"
+  Signal Type  → "run_summary"
+  Why Relevant → "Sources: {N} web searches, {N} RSS feeds. 
+                  Found: {total}. Passed threshold: {N}. 
+                  Errors: {list or none}"
+  Status       → "summary"
 
 ---
 
