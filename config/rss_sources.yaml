@@ -13,7 +13,7 @@ feeds:
     focus: "engineering leadership, team performance"
 
   - name: "InfoQ Software Engineering"
-    url: "https://feed.infoq.com/software-engineering"
+    url: "https://www.infoq.com/feed/"
     category: "industry"
     focus: "software delivery, engineering practices"
 
@@ -21,11 +21,6 @@ feeds:
     url: "https://www.thoughtworks.com/rss/insights.xml"
     category: "industry"
     focus: "technology strategy, engineering culture"
-
-  - name: "DX Tips"
-    url: "https://dx.tips/rss"
-    category: "industry"
-    focus: "developer experience, DevEx metrics"
 
   - name: "Software Lead Weekly"
     url: "https://softwareleadweekly.com/issues.rss"
@@ -78,7 +73,7 @@ feeds:
     focus: "engineering culture, team performance"
 
   - name: "Level Up (Pat Kua)"
-    url: "http://levelup.patkua.com/rss"
+    url: "https://levelup.patkua.com/rss"
     category: "industry"
     focus: "tech leadership, engineering management"
 
