@@ -180,6 +180,37 @@ with a note that Notion write failed.
 
 ---
 
+### Step 9: Send a Slack alert for each passing signal
+Post to the channel in the SLACK_CHANNEL environment variable.
+Use exactly this format for each signal:
+
+[SIGNAL] {theme_match} | {relevance_score}/10 | {URGENCY IN CAPS}
+
+{headline}
+
+Why it matters: {why_relevant}
+Type: {signal_type} | Format: {suggested_format}
+Market language: {market_language as comma-separated list}
+Source: {source_url}
+
+---
+
+### Step 10: Post the run summary to Slack
+After all signals have been processed, post one final message
+to the same SLACK_CHANNEL:
+
+Watcher run complete — {current timestamp}
+─────────────────────────────
+Sources checked:
+  Web search: {N} queries across {N} themes
+  RSS feeds: {N} feeds checked, {N} items found
+Signals collected: {total before filtering}
+Signals above threshold (7+): {N}
+Signals written to Notion: {N}
+Any errors: {list feed URLs that failed, or "none"}
+
+---
+
 ## What a good run looks like
   2 to 5 signals per run is the ideal range.
   More than 8 signals means your scoring is too loose — tighten it.
