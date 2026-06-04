@@ -31,3 +31,73 @@ feeds:
     url: "https://softwareleadweekly.com/issues.rss"
     category: "industry"
     focus: "engineering leadership, team management"
+    
+  - name: "TLDR AI"
+    url: "https://tldr.tech/api/rss/ai"
+    category: "industry"
+    focus: "AI launches, research, tools — daily"
+
+  - name: "TLDR DevOps"
+    url: "https://tldr.tech/api/rss/devops"
+    category: "industry"
+    focus: "DevOps tooling, platform engineering"
+
+  - name: "DeepLearning.AI The Batch"
+    url: "https://www.deeplearning.ai/the-batch/feed/"
+    category: "industry"
+    focus: "AI research, model releases, industry trends"
+
+  - name: "ByteByteGo"
+    url: "https://blog.bytebytego.com/feed"
+    category: "industry"
+    focus: "system design, software architecture"
+
+  - name: "The Pragmatic Engineer"
+    url: "https://newsletter.pragmaticengineer.com/feed"
+    category: "industry"
+    focus: "engineering leadership, big tech, careers"
+
+  - name: "Architecture Weekly"
+    url: "https://www.architecture-weekly.com/feed"
+    category: "industry"
+    focus: "software architecture, engineering patterns"
+
+  - name: "groCTO"
+    url: "https://grocto.substack.com/feed"
+    category: "industry"
+    focus: "CTO perspective, engineering strategy"
+
+  - name: "Greg Orojstersek"
+    url: "https://gregorojstersek.substack.com/feed"
+    category: "industry"
+    focus: "engineering leadership, team building"
+
+  - name: "Refactoring"
+    url: "https://refactoring.fm/feed"
+    category: "industry"
+    focus: "engineering culture, team performance"
+
+  - name: "Level Up (Pat Kua)"
+    url: "http://levelup.patkua.com/rss"
+    category: "industry"
+    focus: "tech leadership, engineering management"
+
+  - name: "AI Breakfast"
+    url: "https://aibreakfast.beehiiv.com/feed"
+    category: "industry"
+    focus: "daily AI news and tool launches"
+
+  - name: "CTO Craft"
+    url: "https://ctocraft.com/blog/feed/"
+    category: "industry"
+    focus: "CTO skills, engineering org leadership"
+
+  - name: "The CTO Club"
+    url: "https://thectoclub.com/feed/"
+    category: "industry"
+    focus: "CTO community, engineering leadership"
+
+  - name: "Get DX"
+    url: "https://newsletter.getdx.com/feed"
+    category: "competitor"
+    focus: "developer experience — direct competitor"
