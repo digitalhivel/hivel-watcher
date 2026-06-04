@@ -182,32 +182,123 @@ with a note that Notion write failed.
 
 ### Step 9: Send a Slack alert for each passing signal
 Post to the channel in the SLACK_CHANNEL environment variable.
-Use exactly this format for each signal:
+Use Slack Block Kit JSON format for each signal.
+Send one message per signal using this exact block structure:
 
-[SIGNAL] {theme_match} | {relevance_score}/10 | {URGENCY IN CAPS}
+{
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*{URGENCY EMOJI} SIGNAL  |  {theme_match}  |  {relevance_score}/10  |  {URGENCY IN CAPS}*"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*{headline}*"
+      }
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*Why it matters*\n{why_relevant}"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Suggested format*\n{suggested_format}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*Signal type*\n{signal_type}"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Market language*\n{market_language as comma-separated list}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Source*\n{source_url}"
+      }
+    },
+    {
+      "type": "divider"
+    }
+  ]
+}
 
-{headline}
+Urgency emoji mapping:
+  immediate → 🔴
+  high      → 🟠
+  standard  → 🟡
+  low       → 🔵
 
-Why it matters: {why_relevant}
-Type: {signal_type} | Format: {suggested_format}
-Market language: {market_language as comma-separated list}
-Source: {source_url}
 
 ---
 
 ### Step 10: Post the run summary to Slack
-After all signals have been processed, post one final message
-to the same SLACK_CHANNEL:
+After all signal alerts are sent, post one final Block Kit summary message:
 
-Watcher run complete — {current timestamp}
-─────────────────────────────
-Sources checked:
-  Web search: {N} queries across {N} themes
-  RSS feeds: {N} feeds checked, {N} items found
-Signals collected: {total before filtering}
-Signals above threshold (7+): {N}
-Signals written to Notion: {N}
-Any errors: {list feed URLs that failed, or "none"}
+{
+  "blocks": [
+    {
+      "type": "header",
+      "text": {
+        "type": "plain_text",
+        "text": "✅ Watcher run complete — {timestamp}"
+      }
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*RSS feeds checked*\n{N} feeds  •  {N} errors"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Web searches*\n{N} queries across {N} themes"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*Signals found*\n{total before filtering}"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Passed threshold (7+)*\n{N} written to Notion"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*⚠️ Feed errors to fix*\n{comma-separated list of failed feed names, or 'None'}"
+      }
+    },
+    {
+      "type": "divider"
+    }
+  ]
+}
 
 ---
 
