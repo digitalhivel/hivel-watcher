@@ -1,0 +1,98 @@
+# Content routing decision rules
+# Agent reads this to decide what format to generate per signal
+
+routing_rules:
+
+  # Rule 1: Competitor move always gets LinkedIn first
+  - condition:
+      signal_type: "competitor_move"
+      urgency: ["immediate", "high"]
+    output:
+      primary_format: "linkedin_post"
+      secondary_format: "blog_post"
+      priority: "urgent"
+      turnaround: "same day"
+      angle: "differentiation"
+      note: "Lead with what Hivel does differently. Do not attack."
+
+  # Rule 2: Major news event with high score gets reactive LinkedIn
+  - condition:
+      signal_type: "news_event"
+      urgency: ["immediate", "high"]
+      relevance_score_min: 8
+    output:
+      primary_format: "linkedin_post"
+      secondary_format: "newsletter_block"
+      priority: "urgent"
+      turnaround: "same day"
+      angle: "hivel_pov"
+      note: "Take a strong position. Use Sudheer's POV where relevant."
+
+  # Rule 3: Trend signal gets blog post
+  - condition:
+      signal_type: "trend"
+      urgency: ["high", "standard"]
+      relevance_score_min: 7
+    output:
+      primary_format: "blog_post"
+      secondary_format: "linkedin_post"
+      priority: "standard"
+      turnaround: "72 hours"
+      angle: "thought_leadership"
+      note: "Long-form. Use brief template. Include AEO sections."
+
+  # Rule 4: Community question with keyword opportunity gets glossary
+  - condition:
+      signal_type: ["community_question", "keyword_opportunity"]
+      urgency: ["standard", "low"]
+    output:
+      primary_format: "glossary_page"
+      secondary_format: "none"
+      priority: "standard"
+      turnaround: "this week"
+      angle: "seo_definition"
+      note: "Short-form definition page for /library/. 400-600 words."
+
+  # Rule 5: Internal product update gets LinkedIn + newsletter block
+  - condition:
+      signal_type: "internal_update"
+    output:
+      primary_format: "linkedin_post"
+      secondary_format: "newsletter_block"
+      priority: "standard"
+      turnaround: "48 hours"
+      angle: "product_news"
+      note: "Lead with the customer outcome, not the feature."
+
+  # Rule 6: Low urgency trend gets newsletter block only
+  - condition:
+      signal_type: "trend"
+      urgency: "low"
+    output:
+      primary_format: "newsletter_block"
+      secondary_format: "none"
+      priority: "low"
+      turnaround: "next newsletter cycle"
+      angle: "curated_insight"
+      note: "100-150 words. One insight, one link, one Hivel angle."
+
+formats:
+  linkedin_post:
+    word_count: "150-250 words"
+    structure: "hook + insight + Hivel angle + CTA"
+    tone: "direct, slightly provocative, peer-to-peer"
+
+  blog_post:
+    word_count: "1500-2500 for standard, 4000-6000 for hub"
+    structure: "use brief-template.md exactly"
+    tone: "experienced engineering leader, pragmatic"
+
+  newsletter_block:
+    word_count: "100-150 words"
+    structure: "one paragraph + one link + optional Hivel callout"
+    tone: "curated, editorial, concise"
+
+  glossary_page:
+    word_count: "400-600 words"
+    structure: "definition + why it matters + how to measure + Hivel CTA"
+    tone: "direct, AEO-optimized, no fluff"
