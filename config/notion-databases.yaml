@@ -1,0 +1,14 @@
+# Notion database IDs for the agent to reference
+# Never hardcode these in CLAUDE.md — always read from here
+
+databases:
+  signal_inbox:
+    id: "36ffc7a5505f80fda57ef9fad332778e"
+    name: "Hivel Signal Inbox"
+    purpose: "Stores all classified signals from watcher runs"
+
+  content_drafts:
+    id: "PASTE_NEW_DB_ID_HERE"
+    name: "Hivel Content Drafts"
+    purpose: "Stores generated content drafts for Simran to review"
+    assigned_to: "Simran"
