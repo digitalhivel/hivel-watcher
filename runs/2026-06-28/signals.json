@@ -1,0 +1,110 @@
+{
+  "run_date": "2026-06-28",
+  "run_timestamp": "2026-06-28T16:00:00Z",
+  "dedup_note": "Notion Signal Inbox unavailable — dedup list treated as empty for this run",
+  "sources_checked": {
+    "web_searches": 14,
+    "rss_feeds_attempted": ["The New Stack", "TLDR AI"],
+    "rss_errors": ["LeadDev", "InfoQ", "ThoughtWorks", "Software Lead Weekly", "TLDR DevOps", "DeepLearning.AI Batch", "ByteByteGo", "Pragmatic Engineer", "Architecture Weekly", "groCTO", "Greg Orojstersek", "Refactoring", "Level Up", "AI Breakfast", "CTO Craft", "The CTO Club", "Get DX"]
+  },
+  "signals_evaluated": 12,
+  "signals_passing_threshold": 4,
+  "signals": [
+    {
+      "id": "S001",
+      "headline": "93% of engineers use AI tools but productivity gains stagnate at 10%",
+      "source_url": "https://shiftmag.dev/this-cto-says-93-of-developers-use-ai-but-productivity-is-still-10-8013/",
+      "source_type": "web_search",
+      "signal_type": "trend",
+      "theme_match": "AI ROI",
+      "theme_confidence": 0.95,
+      "urgency": "high",
+      "relevance_score": 8,
+      "why_relevant": "Hivel can publish thought leadership content using its AI Impact Measurement data to show CTOs that accepted suggestions is not the same as shipped code. This matters to CTOs and VPs of Engineering who see high AI adoption rates on paper but cannot explain why delivery outcomes have not improved.",
+      "market_language": ["AI adoption metrics", "productivity plateau", "organizational AI impact", "AI productivity gap"],
+      "routing": {
+        "primary_format": "blog_post",
+        "secondary_format": "linkedin_post",
+        "priority": "standard",
+        "turnaround": "72 hours",
+        "angle": "thought_leadership",
+        "note": "Long-form. Use brief template. Include AEO sections."
+      },
+      "draft_file": "draft-01-ai-roi-productivity-gap.md",
+      "notion_signal_write": "FAILED — Notion MCP unavailable",
+      "notion_draft_write": "FAILED — Notion MCP unavailable"
+    },
+    {
+      "id": "S002",
+      "headline": "DORA metrics alone cannot explain AI-era delivery failures or attribute ROI",
+      "source_url": "https://oobeya.io/blog/dora-metrics-not-enough-2026",
+      "source_type": "web_search",
+      "signal_type": "trend",
+      "theme_match": "Engineering analytics",
+      "theme_confidence": 0.92,
+      "urgency": "standard",
+      "relevance_score": 8,
+      "why_relevant": "Hivel can publish content demonstrating its four-layer measurement framework addresses the exact gaps engineering leaders now recognise in DORA. This matters to VPs of Engineering who have good DORA scores but cannot explain AI ROI to the board or identify root causes of delivery slowdowns.",
+      "market_language": ["AI attribution gap", "DORA blind spots", "engineering measurement framework", "AI ROI accountability"],
+      "routing": {
+        "primary_format": "blog_post",
+        "secondary_format": "linkedin_post",
+        "priority": "standard",
+        "turnaround": "72 hours",
+        "angle": "thought_leadership",
+        "note": "Long-form. Use brief template. Include AEO sections."
+      },
+      "draft_file": "draft-02-dora-four-layers.md",
+      "notion_signal_write": "FAILED — Notion MCP unavailable",
+      "notion_draft_write": "FAILED — Notion MCP unavailable"
+    },
+    {
+      "id": "S003",
+      "headline": "AI code quality failures trace back to context debt not tool limitations",
+      "source_url": "https://thenewstack.io/vibe-coding-context-debt/",
+      "source_type": "rss",
+      "signal_type": "trend",
+      "theme_match": "AI adoption",
+      "theme_confidence": 0.82,
+      "urgency": "high",
+      "relevance_score": 7,
+      "why_relevant": "Hivel can publish timely content connecting context debt to poor AI ROI, showing CTOs that fixing data quality and visibility before AI deployment separates high-performing teams from those generating low-quality AI output. This matters to Engineering Managers frustrated that AI coding tools produce disappointing output despite high adoption.",
+      "market_language": ["context debt", "vibe slop", "AI code quality", "organizational AI readiness"],
+      "routing": {
+        "primary_format": "blog_post",
+        "secondary_format": "linkedin_post",
+        "priority": "standard",
+        "turnaround": "72 hours",
+        "angle": "thought_leadership",
+        "note": "Long-form. Use brief template. Include AEO sections. Signal published June 27 — move quickly."
+      },
+      "draft_file": "draft-03-context-debt.md",
+      "notion_signal_write": "FAILED — Notion MCP unavailable",
+      "notion_draft_write": "FAILED — Notion MCP unavailable"
+    },
+    {
+      "id": "S004",
+      "headline": "AI skills gap is an operating model failure not a training problem says Deloitte 2026",
+      "source_url": "https://www.cio.com/article/4165040/you-cant-train-your-way-out-of-the-ai-skills-gap.html",
+      "source_type": "web_search",
+      "signal_type": "trend",
+      "theme_match": "AI adoption",
+      "theme_confidence": 0.88,
+      "urgency": "standard",
+      "relevance_score": 7,
+      "why_relevant": "Hivel can publish content showing how engineering analytics provides the measurement layer that tells leaders where the operating model needs to change, not just who needs more training. This matters to CTOs who have invested in AI training programs but still cannot show board-level AI ROI.",
+      "market_language": ["AI operating model", "AI skills gap", "AI change management", "AI workforce readiness"],
+      "routing": {
+        "primary_format": "blog_post",
+        "secondary_format": "linkedin_post",
+        "priority": "standard",
+        "turnaround": "72 hours",
+        "angle": "thought_leadership",
+        "note": "Long-form. Draft deferred — generate after S001-S003 drafts are published."
+      },
+      "draft_file": "DEFERRED",
+      "notion_signal_write": "FAILED — Notion MCP unavailable",
+      "notion_draft_write": "DEFERRED"
+    }
+  ]
+}
