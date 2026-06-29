@@ -1,0 +1,149 @@
+[
+  {
+    "headline": "AI generates code 6x faster than humans can review, breaking the SDLC for engineering teams",
+    "source_url": "https://www.infoq.com/presentations/ai-sdlc-pull-request/",
+    "source_type": "rss",
+    "signal_type": "news_event",
+    "theme_match": "Engineering analytics",
+    "theme_confidence": 0.9,
+    "urgency": "high",
+    "relevance_score": 9,
+    "why_relevant": "Hivel can publish same-day differentiation content using its AI Code Review Agent data to show VPs of Engineering that automated first-pass review closes the 6x human-AI velocity gap that InfoQ's Webster identified. This matters to VPs of Engineering who cannot hire enough senior reviewers to keep pace with AI-generated code output.",
+    "competitor_angle": null,
+    "market_language": ["PR review bottleneck", "6x velocity gap", "validation-first agents", "SDLC bottleneck", "test impact analysis"],
+    "routing": {
+      "primary_format": "linkedin_post",
+      "secondary_format": "newsletter_block",
+      "priority": "urgent",
+      "turnaround": "same day",
+      "angle": "hivel_pov",
+      "note": "Take a strong position. Use Sudheer's POV where relevant."
+    }
+  },
+  {
+    "headline": "Uber abandoned developer years saved metric and moved to feature velocity as its AI ROI measure",
+    "source_url": "https://newsletter.getdx.com/p/ubers-journey-of-measuring-ai-impact",
+    "source_type": "competitor_rss",
+    "signal_type": "competitor_move",
+    "theme_match": "AI ROI",
+    "theme_confidence": 0.92,
+    "urgency": "high",
+    "relevance_score": 9,
+    "why_relevant": "Hivel can publish a sharper version of Uber's measurement journey by showing CTOs how to track feature velocity through production-merged AI code rather than activity proxies, because GetDX is framing the AI ROI measurement conversation without connecting it to what actually ships. This matters to VPs of Engineering who watched their developer years saved metric collapse under board scrutiny.",
+    "competitor_angle": "Hivel tracks production-merged AI code as the actual unit of measurement, not accepted suggestions or PR counts, which is exactly the outcome layer Uber found missing in their own journey.",
+    "market_language": ["feature velocity", "developer years saved", "AI ROI measurement", "outcome-focused metrics", "activity-based metrics"],
+    "routing": {
+      "primary_format": "linkedin_post",
+      "secondary_format": "blog_post",
+      "priority": "urgent",
+      "turnaround": "same day",
+      "angle": "differentiation",
+      "note": "Lead with what Hivel does differently. Do not attack."
+    }
+  },
+  {
+    "headline": "Teams shipping 5x more PRs with AI but software quality is collapsing across the industry",
+    "source_url": "https://newsletter.pragmaticengineer.com/p/slow-down-to-speed-up",
+    "source_type": "rss",
+    "signal_type": "trend",
+    "theme_match": "AI ROI",
+    "theme_confidence": 0.95,
+    "urgency": "high",
+    "relevance_score": 9,
+    "why_relevant": "Hivel can publish thought leadership using its production-merged code measurement data to show CTOs that 5x PR throughput without quality tracking is a liability, not an asset. This matters to CTOs being pressured to show AI ROI to boards while quality collapses underneath the velocity numbers.",
+    "competitor_angle": null,
+    "market_language": ["5x more pull requests", "accepted without human review", "quality collapse", "AI code review", "PR throughput"],
+    "routing": {
+      "primary_format": "blog_post",
+      "secondary_format": "linkedin_post",
+      "priority": "standard",
+      "turnaround": "72 hours",
+      "angle": "thought_leadership",
+      "note": "Long-form. Use brief template. Include AEO sections."
+    }
+  },
+  {
+    "headline": "51.9 percent of code is now AI-authored and median PR size nearly doubled in 12 months",
+    "source_url": "https://newsletter.getdx.com/p/ai-authored-code-has-nearly-doubled",
+    "source_type": "competitor_rss",
+    "signal_type": "competitor_move",
+    "theme_match": "AI adoption",
+    "theme_confidence": 0.88,
+    "urgency": "high",
+    "relevance_score": 8,
+    "why_relevant": "Hivel can benchmark its customers against GetDX's industry data showing 51.9% AI-authored code to demonstrate where teams' AI adoption stands versus the market, because GetDX published the data without the quality tracking layer. This matters to CTOs who need to know whether their 50% AI code share is creating or destroying value.",
+    "competitor_angle": "Hivel adds the quality and production-merge tracking layer that GetDX's benchmark data shows is missing from current industry measurement.",
+    "market_language": ["cognitive debt", "AI-authored code", "PR size doubled", "code verbosity", "review burden"],
+    "routing": {
+      "primary_format": "linkedin_post",
+      "secondary_format": "blog_post",
+      "priority": "urgent",
+      "turnaround": "same day",
+      "angle": "differentiation",
+      "note": "Lead with what Hivel does differently. Do not attack."
+    }
+  },
+  {
+    "headline": "GetDX data shows only 27 percent of AI-generated code reaches production despite 93 percent adoption",
+    "source_url": "https://newsletter.getdx.com/p/revisiting-the-dx-core-4",
+    "source_type": "competitor_rss",
+    "signal_type": "competitor_move",
+    "theme_match": "Engineering analytics",
+    "theme_confidence": 0.85,
+    "urgency": "standard",
+    "relevance_score": 8,
+    "why_relevant": "Hivel can use GetDX's own research showing only 27.4% of AI code reaching production to validate its core measurement thesis, since this is exactly the gap Hivel's AI Impact Measurement product was built to track. This matters to CTOs reporting acceptance rates to boards without knowing how much actually ships.",
+    "competitor_angle": "Hivel tracks production-merged code as the primary AI ROI unit, not acceptance rates or PR volume, which GetDX's own research confirms is what actually matters.",
+    "market_language": ["outcome-focused measurement", "AI code reaching production", "rubber-stamping", "activity metrics", "diagnostic layer"],
+    "routing": {
+      "primary_format": "blog_post",
+      "secondary_format": "none",
+      "priority": "standard",
+      "turnaround": "72 hours",
+      "angle": "thought_leadership",
+      "note": "Long-form. Use brief template. Include AEO sections."
+    }
+  },
+  {
+    "headline": "DORA metrics have three blind spots in 2026 that AI has made critical for engineering leaders to fill",
+    "source_url": "https://oobeya.io/blog/dora-metrics-not-enough-2026",
+    "source_type": "rss",
+    "signal_type": "trend",
+    "theme_match": "Engineering analytics",
+    "theme_confidence": 0.88,
+    "urgency": "standard",
+    "relevance_score": 8,
+    "why_relevant": "Hivel can demonstrate that its four-layer intelligence stack directly addresses the DORA blind spots Oobeya identified, by showing CTOs how AI attribution and developer experience layers complete the picture. This matters to CTOs with strong DORA scores who still face board questions about whether AI investment creates business value.",
+    "competitor_angle": null,
+    "market_language": ["DORA blind spots", "AI attribution", "AI code share percentage", "four-layer intelligence stack", "AI-generated code churn"],
+    "routing": {
+      "primary_format": "blog_post",
+      "secondary_format": "linkedin_post",
+      "priority": "standard",
+      "turnaround": "72 hours",
+      "angle": "thought_leadership",
+      "note": "Long-form. Use brief template. Include AEO sections."
+    }
+  },
+  {
+    "headline": "Airbnb reached 97 percent weekly agentic AI usage without mandates and PR throughput increased 65 percent",
+    "source_url": "https://newsletter.getdx.com/p/beyond-the-cli-agentic-ai-for-async",
+    "source_type": "competitor_rss",
+    "signal_type": "competitor_move",
+    "theme_match": "Agentic workflows",
+    "theme_confidence": 0.85,
+    "urgency": "standard",
+    "relevance_score": 7,
+    "why_relevant": "Hivel can help engineering leaders understand whether their agentic AI adoption is producing the same PR throughput gains as Airbnb while measuring whether those gains translate to production-merged features, because GetDX's coverage highlights adoption metrics without connecting to quality. This matters to VPs of Engineering benchmarking their AI programs against industry leaders.",
+    "competitor_angle": "Hivel provides the quality tracking layer that shows whether a 65% PR throughput increase is creating or destroying software value after merge.",
+    "market_language": ["agentic AI adoption", "PR throughput", "AI-authored code", "workflow orchestration", "adoption without mandates"],
+    "routing": {
+      "primary_format": "blog_post",
+      "secondary_format": "none",
+      "priority": "standard",
+      "turnaround": "72 hours",
+      "angle": "thought_leadership",
+      "note": "Long-form. Use brief template. Include AEO sections."
+    }
+  }
+]

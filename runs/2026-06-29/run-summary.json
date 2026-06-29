@@ -1,0 +1,48 @@
+{
+  "run_timestamp": "2026-06-29T00:00:00Z",
+  "rss_feeds_checked": 5,
+  "rss_feed_errors": ["infoq.com (301 redirect, recovered)", "thenewstack.io/vibe-coding-context-debt (paywalled, skipped)"],
+  "web_searches": 14,
+  "signals_found_total": 24,
+  "signals_passed_threshold": 7,
+  "drafts_generated": 3,
+  "assigned_to": "Simran",
+  "notion_status": "ERROR: Notion MCP server failed to connect. No API token available. Signal and draft pages not written.",
+  "slack_status": "ERROR: Slack MCP server failed to connect. No bot token available. Slack alerts not sent.",
+  "signals_by_urgency": {
+    "immediate": 0,
+    "high": 4,
+    "standard": 3,
+    "low": 0
+  },
+  "signals_by_theme": {
+    "AI ROI": 2,
+    "Engineering analytics": 2,
+    "AI adoption": 1,
+    "Agentic workflows": 1
+  },
+  "drafts": [
+    {
+      "title": "AI generates code 6x faster than humans can review, breaking the SDLC for engineering teams",
+      "format": "linkedin_post",
+      "priority": "urgent",
+      "turnaround": "same day",
+      "file": "draft-1-linkedin-ai-breaks-sdlc.md"
+    },
+    {
+      "title": "Uber abandoned developer years saved metric and moved to feature velocity as its AI ROI measure",
+      "format": "linkedin_post",
+      "priority": "urgent",
+      "turnaround": "same day",
+      "file": "draft-2-linkedin-uber-ai-roi.md"
+    },
+    {
+      "title": "Your AI Is Shipping Code. Is It Shipping Value? (blog post)",
+      "format": "blog_post",
+      "priority": "standard",
+      "turnaround": "72 hours",
+      "file": "draft-3-blog-5x-prs-quality-collapse.md"
+    }
+  ],
+  "action_required": "Notion and Slack MCP servers did not connect this run. Drafts are committed to GitHub branch claude/elegant-dijkstra-g6n4x9. Manual Notion/Slack delivery needed or re-run after MCP servers reconnect."
+}
