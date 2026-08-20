@@ -22,25 +22,30 @@ feeds:
     category: "industry"
     focus: "technology strategy, engineering culture"
 
-  - name: "Software Lead Weekly"
-    url: "https://softwareleadweekly.com/issues.rss"
-    category: "industry"
-    focus: "engineering leadership, team management"
-    
+  # DEAD 2026-08-20: HTTP 404 on issues.rss, /rss/ and /feed/. Needs a new URL.
+  # - name: "Software Lead Weekly"
+  #   url: "https://softwareleadweekly.com/issues.rss"
+  #   category: "industry"
+  #   focus: "engineering leadership, team management"
+
+  # FLAKY 2026-08-20: intermittent connection failure, succeeds on retry. Retry before
+  # counting this feed as an error.
   - name: "TLDR AI"
     url: "https://tldr.tech/api/rss/ai"
     category: "industry"
-    focus: "AI launches, research, tools — daily"
+    focus: "AI launches, research, tools - daily"
 
   - name: "TLDR DevOps"
     url: "https://tldr.tech/api/rss/devops"
     category: "industry"
     focus: "DevOps tooling, platform engineering"
 
-  - name: "DeepLearning.AI The Batch"
-    url: "https://www.deeplearning.ai/the-batch/feed/"
-    category: "industry"
-    focus: "AI research, model releases, industry trends"
+  # DEAD 2026-08-20: HTTP 404 on /the-batch/feed/, /the-batch/feed, /feed/ and
+  # the-batch/rss.xml (500). Needs a new URL.
+  # - name: "DeepLearning.AI The Batch"
+  #   url: "https://www.deeplearning.ai/the-batch/feed/"
+  #   category: "industry"
+  #   focus: "AI research, model releases, industry trends"
 
   - name: "ByteByteGo"
     url: "https://blog.bytebytego.com/feed"
@@ -72,25 +77,29 @@ feeds:
     category: "industry"
     focus: "engineering culture, team performance"
 
-  - name: "Level Up (Pat Kua)"
-    url: "https://levelup.patkua.com/rss"
-    category: "industry"
-    focus: "tech leadership, engineering management"
+  # DEAD 2026-08-20: HTTP 404 on /rss, /feed and /rss.xml. Needs a new URL.
+  # - name: "Level Up (Pat Kua)"
+  #   url: "https://levelup.patkua.com/rss"
+  #   category: "industry"
+  #   focus: "tech leadership, engineering management"
 
-  - name: "AI Breakfast"
-    url: "https://aibreakfast.beehiiv.com/feed"
-    category: "industry"
-    focus: "daily AI news and tool launches"
+  # DEAD 2026-08-20: HTTP 403 without a browser UA, 404 with one. Feed appears gone.
+  # - name: "AI Breakfast"
+  #   url: "https://aibreakfast.beehiiv.com/feed"
+  #   category: "industry"
+  #   focus: "daily AI news and tool launches"
 
   - name: "CTO Craft"
     url: "https://ctocraft.com/blog/feed/"
     category: "industry"
     focus: "CTO skills, engineering org leadership"
 
-  - name: "The CTO Club"
-    url: "https://thectoclub.com/feed/"
-    category: "industry"
-    focus: "CTO community, engineering leadership"
+  # BLOCKED 2026-08-20: HTTP 403 bot-block page, and the connection is refused outright
+  # when a browser UA is sent. Unusable from the runner; needs an allowlist or a new URL.
+  # - name: "The CTO Club"
+  #   url: "https://thectoclub.com/feed/"
+  #   category: "industry"
+  #   focus: "CTO community, engineering leadership"
 
   - name: "Get DX"
     url: "https://newsletter.getdx.com/feed"
